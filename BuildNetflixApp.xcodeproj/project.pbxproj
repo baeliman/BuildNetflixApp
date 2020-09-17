@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1446C4252513865000BAD5C4 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1446C4242513865000BAD5C4 /* EpisodesView.swift */; };
 		146C0F5C2508F601006511A4 /* BuildNetflixAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C0F5B2508F601006511A4 /* BuildNetflixAppApp.swift */; };
 		146C0F5E2508F601006511A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C0F5D2508F601006511A4 /* ContentView.swift */; };
 		146C0F602508F603006511A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146C0F5F2508F603006511A4 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1446C4242513865000BAD5C4 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		146C0F582508F601006511A4 /* BuildNetflixApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildNetflixApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		146C0F5B2508F601006511A4 /* BuildNetflixAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildNetflixAppApp.swift; sourceTree = "<group>"; };
 		146C0F5D2508F601006511A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			children = (
 				146C0F8A2510CA4C006511A4 /* MoreLikeThis.swift */,
 				146C0F93251216F3006511A4 /* TrailerList.swift */,
+				1446C4242513865000BAD5C4 /* EpisodesView.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				146C0F86250CD7EA006511A4 /* Episode.swift in Sources */,
 				146C0F6B2508F668006511A4 /* HomeView.swift in Sources */,
 				146C0F762508FCA8006511A4 /* HomeVM.swift in Sources */,
+				1446C4252513865000BAD5C4 /* EpisodesView.swift in Sources */,
 				146C0F92251212CA006511A4 /* VideoPreviewImage.swift in Sources */,
 				146C0F5E2508F601006511A4 /* ContentView.swift in Sources */,
 				146C0F722508F868006511A4 /* StandardHomeMovie.swift in Sources */,

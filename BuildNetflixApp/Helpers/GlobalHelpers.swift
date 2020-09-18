@@ -86,6 +86,7 @@ let exampleMoview1 = Movie(
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [exampleMoview2, exampleMoview3, exampleMoview4, exampleMoview5, exampleMoview6, exampleMoview7 ],
+    episodes: allExampleEpisodes,
     trailers: exampleTrailers)
 let exampleMoview2 = Movie(
     id: UUID().uuidString,
@@ -97,6 +98,7 @@ let exampleMoview2 = Movie(
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [],
+    episodes: allExampleEpisodes,
     promotionHeadline: "Watch Season 2 Now",
     trailers: exampleTrailers)
 let exampleMoview3 = Movie(
@@ -146,11 +148,12 @@ let exampleMoview6 = Movie(
     categories: ["Dystopina", "Exciting", "Suspenseful", "Sci-Fi TV"],
     year: 2020,
     rating: "TV-MA",
-    numberOfSeasons: 6,
+    numberOfSeasons: 3,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
     moreLikeThisMovies: [],
+    episodes: allExampleEpisodes,
     promotionHeadline: "Watch Season 6 Now",
     trailers: exampleTrailers)
 let exampleMoview7 = Movie(

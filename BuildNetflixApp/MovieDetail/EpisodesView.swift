@@ -11,7 +11,7 @@ struct EpisodesView: View {
     var episodes: [Episode]
     
     @Binding var showSeasonPicker: Bool
-    @Binding var selectedSesaon: Int
+    @Binding var selectedSeason: Int
     
     func getEpisodes(forSeason season: Int) -> [Episode] {
         return episodes.filter( { $0.season == season })
@@ -25,7 +25,7 @@ struct EpisodesView: View {
                     showSeasonPicker = true
                 }, label: {
                     Group {
-                        Text("Season 1")
+                        Text("Season \(selectedSeason)")
                         Image(systemName: "chevron.down")
                     }
                     .font(.system(size: 16))
@@ -36,12 +36,13 @@ struct EpisodesView: View {
             
             //  Episodes list
             
-            ForEach(getEpisodes(forSeason: selectedSesaon)) { episode in
+            ForEach(getEpisodes(forSeason: selectedSeason)) { episode in
                 VStack(alignment: .leading) {
                     // HStack with preview image
                     HStack {
-                        VideoPreviewImage(imageURL: episode.videoURL, videoURL: episode.thumbnailURL)
+                        VideoPreviewImage(imageURL: episode.thumbnailURL, videoURL: episode.videoURL)
                             .frame(width: 120, height: 70)
+                            .clipped() // because image source is .fill, it extends above frame
                         
                         VStack(alignment: .leading) {
                             Text("\(episode.episodeNumber). \(episode.name)")
@@ -77,7 +78,7 @@ struct Episodes_Previews: PreviewProvider {
         ZStack {
             Color(.black)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            EpisodesView(episodes: allExampleEpisodes, showSeasonPicker: .constant(false), selectedSesaon: .constant(1))
+            EpisodesView(episodes: allExampleEpisodes, showSeasonPicker: .constant(false), selectedSeason: .constant(1))
         }
     }
 }

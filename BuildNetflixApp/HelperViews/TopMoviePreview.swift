@@ -74,6 +74,6 @@ struct TopMoviePreview: View {
 
 struct TopMoviePreview_Previews: PreviewProvider {
     static var previews: some View {
-        TopMoviePreview(movie: exampleMoview1)
+        TopMoviePreview(movie: exampleMoview5)
     }
 }

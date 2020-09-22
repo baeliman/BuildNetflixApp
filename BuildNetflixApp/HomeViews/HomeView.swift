@@ -36,29 +36,7 @@ struct HomeView: View {
                         .padding(.top, -110)
                         .zIndex(-1) // Moves view behind higher level view
                     
-                    ForEach(vm.allCategories, id: \.self) { category in
-                        VStack {
-                            HStack {
-                                Text(category)
-                                    .font(.title3)
-                                    .bold()
-                                Spacer()
-                            }
-                            
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                LazyHStack {
-                                    ForEach(vm.getMovie(forCat: category)) { movie in
-                                        StandardHomeMovie(movie: movie)
-                                            .frame(width: 100, height: 200)
-                                            .padding(.horizontal, 20)
-                                            .onTapGesture(perform: {
-                                                movieDetailToShow = movie
-                                            })
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    HomeStack(vm: vm, topRowSelection: topRowSelection, selectedGenre: homeGenre, movieDetailToShow: $movieDetailToShow)
                 }
             }
             if movieDetailToShow != nil {
@@ -66,10 +44,97 @@ struct HomeView: View {
                     .animation(.easeIn)
                     .transition(.opacity)
             }
+            
+            if showTopRowSelection {
+                Group {
+                    Color.black.opacity(0.9)
+                    VStack(spacing: 40) {
+                        Spacer()
+                        ForEach(HomeTopRow.allCases, id: \.self) { topRow in
+                            Button(action: {
+                                topRowSelection = topRow
+                                showTopRowSelection = false
+                            }, label: {
+                                if topRow == topRowSelection  {
+                                    Text("\(topRow.rawValue)")
+                                        .bold()
+                                } else {
+                                    Text("\(topRow.rawValue)")
+                                        .foregroundColor(.gray)
+                                }
+                            })
+                        }
+                        Spacer()
+                        Button(action: {
+                            showTopRowSelection = false
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 40))
+                        })
+                        .padding(.bottom, 20)
+                    }
+                }
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .font(.title2)
+            }
+            
+
+            if showGenreSelection {
+                Group {
+                    Color.black.opacity(0.9)
+                    VStack(spacing: 40) {
+                        Spacer()
+                        ScrollView {
+                            ForEach(vm.allGenre, id: \.self) { genre in
+                                Button(action: {
+                                    homeGenre = genre
+                                    showGenreSelection = false
+                                }, label: {
+                                    if genre == homeGenre  {
+                                        Text("\(genre.rawValue)")
+                                            .bold()
+                                    } else {
+                                        Text("\(genre.rawValue)")
+                                            .foregroundColor(.gray)
+                                    }
+                                })
+                                .padding(.bottom, 40)
+                            }
+                        }
+                        Spacer()
+                        Button(action: {
+                            showGenreSelection = false
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 40))
+                        })
+                        .padding(.bottom, 20)
+                    }
+                }
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .font(.title2)
+            }
+            
         }
         .foregroundColor(.white)
     }
 }
+
+
+//Group {
+//    Color.black.opacity(0.9)
+//    VStack {
+//        ForEach(HomeTopRow.allCases, id: \.self) { topRow in
+//            Button(action: {
+//                topRowSelection = topRow
+//                showTopRowSelection = false
+//            }, label: {
+//                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+//            })
+//        }
+//    }
+//}
+//edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
@@ -148,7 +213,7 @@ struct TopRowButtons: View {
                     }, label: {
                         HStack {
                             Text(topRowSelection.rawValue)
-                                .font(.system(size: 12))
+                                .font(.system(size: 16))
                             
                             Image(systemName: "triangle.fill")
                                 .font(.system(size: 10))
@@ -162,9 +227,9 @@ struct TopRowButtons: View {
                     }, label: {
                         HStack {
                             Text(homeGenre.rawValue)
-                                .font(.system(size: 10))
+                                .font(.system(size: 12))
                             Image(systemName: "triangle.fill")
-                                .font(.system(size: 6))
+                                .font(.system(size: 8))
                                 .rotationEffect(.degrees(180), anchor: .center)
                         }
                     })
@@ -174,8 +239,8 @@ struct TopRowButtons: View {
                 
 
             }
-            .padding(.leading, 30)
-            .padding(.trailing, 30)
+            .padding(.leading, 25)
+            .padding(.trailing, 25)
         }
 
     }
@@ -195,3 +260,5 @@ enum HomeGenre: String {
     case Horror
     case Thriller
 }
+
+

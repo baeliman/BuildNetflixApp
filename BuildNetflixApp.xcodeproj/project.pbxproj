@@ -29,6 +29,7 @@
 		146C0F8F251210BF006511A4 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C0F8E251210BF006511A4 /* SwiftUIVideoView.swift */; };
 		146C0F92251212CA006511A4 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C0F91251212CA006511A4 /* VideoPreviewImage.swift */; };
 		146C0F94251216F3006511A4 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C0F93251216F3006511A4 /* TrailerList.swift */; };
+		644E79A42518B8AE004A98C9 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E79A32518B8AE004A98C9 /* HomeStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		146C0F8E251210BF006511A4 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		146C0F91251212CA006511A4 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		146C0F93251216F3006511A4 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		644E79A32518B8AE004A98C9 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				146C0F752508FCA8006511A4 /* HomeVM.swift */,
 				146C0F83250CCF91006511A4 /* MovieDetail.swift */,
 				146C0F87250F7B68006511A4 /* CustomTabSwitcher.swift */,
+				644E79A32518B8AE004A98C9 /* HomeStack.swift */,
 			);
 			path = HomeViews;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				146C0F702508F7E7006511A4 /* Movie.swift in Sources */,
 				146C0F5C2508F601006511A4 /* BuildNetflixAppApp.swift in Sources */,
 				146C0F8B2510CA4C006511A4 /* MoreLikeThis.swift in Sources */,
+				644E79A42518B8AE004A98C9 /* HomeStack.swift in Sources */,
 				146C0F88250F7B68006511A4 /* CustomTabSwitcher.swift in Sources */,
 				146C0F94251216F3006511A4 /* TrailerList.swift in Sources */,
 				146C0F7A250A4162006511A4 /* SmallVerticalButton.swift in Sources */,

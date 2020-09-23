@@ -32,6 +32,7 @@
 		644E79A42518B8AE004A98C9 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E79A32518B8AE004A98C9 /* HomeStack.swift */; };
 		64FBFFA2251B57CF00F134C5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBFFA1251B57CF00F134C5 /* SearchBar.swift */; };
 		64FBFFA6251B59E800F134C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBFFA5251B59E800F134C5 /* Colors.swift */; };
+		64FBFFA9251B726D00F134C5 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBFFA8251B726D00F134C5 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		644E79A32518B8AE004A98C9 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		64FBFFA1251B57CF00F134C5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		64FBFFA5251B59E800F134C5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		64FBFFA8251B726D00F134C5 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				146C0F77250A3984006511A4 /* TopMoviePreview.swift */,
 				146C0F7D250A627A006511A4 /* PlayButton.swift */,
 				146C0F79250A4162006511A4 /* SmallVerticalButton.swift */,
+				64FBFFA8251B726D00F134C5 /* ActivityIndicator.swift */,
 			);
 			path = HelperViews;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				146C0F722508F868006511A4 /* StandardHomeMovie.swift in Sources */,
 				146C0F78250A3984006511A4 /* TopMoviePreview.swift in Sources */,
 				146C0F702508F7E7006511A4 /* Movie.swift in Sources */,
+				64FBFFA9251B726D00F134C5 /* ActivityIndicator.swift in Sources */,
 				146C0F5C2508F601006511A4 /* BuildNetflixAppApp.swift in Sources */,
 				146C0F8B2510CA4C006511A4 /* MoreLikeThis.swift in Sources */,
 				644E79A42518B8AE004A98C9 /* HomeStack.swift in Sources */,

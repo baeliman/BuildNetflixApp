@@ -29,6 +29,9 @@
 		146C0F8F251210BF006511A4 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C0F8E251210BF006511A4 /* SwiftUIVideoView.swift */; };
 		146C0F92251212CA006511A4 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C0F91251212CA006511A4 /* VideoPreviewImage.swift */; };
 		146C0F94251216F3006511A4 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C0F93251216F3006511A4 /* TrailerList.swift */; };
+		643A9993251CB1B300AD5913 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A9992251CB1B300AD5913 /* SearchView.swift */; };
+		643A9996251CB27800AD5913 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A9995251CB27800AD5913 /* SearchVM.swift */; };
+		643A9999251CB8A100AD5913 /* GenerateMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A9998251CB8A100AD5913 /* GenerateMovies.swift */; };
 		644E79A42518B8AE004A98C9 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E79A32518B8AE004A98C9 /* HomeStack.swift */; };
 		64FBFFA2251B57CF00F134C5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBFFA1251B57CF00F134C5 /* SearchBar.swift */; };
 		64FBFFA6251B59E800F134C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBFFA5251B59E800F134C5 /* Colors.swift */; };
@@ -59,6 +62,9 @@
 		146C0F8E251210BF006511A4 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		146C0F91251212CA006511A4 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		146C0F93251216F3006511A4 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		643A9992251CB1B300AD5913 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		643A9995251CB27800AD5913 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		643A9998251CB8A100AD5913 /* GenerateMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMovies.swift; sourceTree = "<group>"; };
 		644E79A32518B8AE004A98C9 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		64FBFFA1251B57CF00F134C5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		64FBFFA5251B59E800F134C5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 			children = (
 				146C0F732508F90E006511A4 /* GlobalHelpers.swift */,
 				64FBFFA5251B59E800F134C5 /* Colors.swift */,
+				643A9998251CB8A100AD5913 /* GenerateMovies.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -186,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				64FBFFA1251B57CF00F134C5 /* SearchBar.swift */,
+				643A9992251CB1B300AD5913 /* SearchView.swift */,
+				643A9995251CB27800AD5913 /* SearchVM.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -266,9 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				146C0F742508F90E006511A4 /* GlobalHelpers.swift in Sources */,
+				643A9999251CB8A100AD5913 /* GenerateMovies.swift in Sources */,
+				643A9996251CB27800AD5913 /* SearchVM.swift in Sources */,
 				64FBFFA6251B59E800F134C5 /* Colors.swift in Sources */,
 				146C0F8D25121005006511A4 /* Trailer.swift in Sources */,
 				146C0F86250CD7EA006511A4 /* Episode.swift in Sources */,
+				643A9993251CB1B300AD5913 /* SearchView.swift in Sources */,
 				146C0F6B2508F668006511A4 /* HomeView.swift in Sources */,
 				146C0F762508FCA8006511A4 /* HomeVM.swift in Sources */,
 				1446C4252513865000BAD5C4 /* EpisodesView.swift in Sources */,

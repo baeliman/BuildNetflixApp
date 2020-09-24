@@ -59,16 +59,16 @@ struct Movie: Identifiable {
     
     var episodeDescriptionDisplay: String {
         if let current = currentEpisode {
-            return current.desription
+            return current.description
         } else {
-            return defaultEpisodeInfo.desription
+            return defaultEpisodeInfo.description
         }
     }
 }
 
 struct CurrentEpisodeInfo: Hashable, Equatable {
     var episodeName: String
-    var desription: String
+    var description: String
     var season: Int
     var episode: Int
 }

@@ -11,5 +11,5 @@ struct Trailer: Identifiable, Hashable {
     var id: String = UUID().uuidString
     var name: String
     var videoURL: URL
-    var thubnailImageURL: URL
+    var thumbnailImageURL: URL
 }
